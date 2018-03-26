@@ -4,7 +4,7 @@ import time
 
 est=0 #variable to check if a connection to SQL server has been established
 
-while est=0: #loop until connection exists
+while est==0: #loop until connection exists
 	cn = pyodbc.connect(driver = '{SQL Server Native Client 11.0}', server = server_name, database = db_name, Trusted_Connection='yes', autocommit = True) 
 	if cn is None:
 		est=0
@@ -22,11 +22,7 @@ xl.Visible=True
 #setting background refresh to false so that everything is updated before macros are run
 for c in wb.Connections:
 	c.OLEDBConnection.BackgroundQuery=False
-
-wb.RefreshAll()
-
-#setting it back in case of manual work
-for c in wb.Connections:
+	c.Refresh()
 	c.OLEDBConnection.BackgroundQuery=True
 
 xl.Run('ValuesCopy')
