@@ -17,7 +17,7 @@ for country in detailCountryData:
                                          ignore_index=True)
 
 #reading data and correcting column names
-data = pd.read_csv(r'./data/suicides.csv')
+data = pd.read_csv(r'./suicides.csv')
 data.columns = ['country', 'year', 'sex', 'age', 'suicides_no', 'population', 'suicides_per_100k', 'country_year',
             'HDI_year', 'gdp_year', 'gdp_per_capita', 'generation']
 # print(tabulate(data.head(20), headers='keys', tablefmt='github'))
