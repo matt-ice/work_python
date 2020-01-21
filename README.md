@@ -10,3 +10,7 @@ Had an additional bash script to create a virtual drive because of incompatibili
 ## Parkinson's classifier
 
 Personal prject to test out XGBoost library for classification of patients suffering from Parkinson's disease
+
+## Suicides overview
+
+Personal prject to create a view into suicide rates per region, gender and age
