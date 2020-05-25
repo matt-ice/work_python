@@ -14,3 +14,12 @@ Personal prject to test out XGBoost library for classification of patients suffe
 ## Suicides overview
 
 Personal prject to create a view into suicide rates per region, gender and age
+
+## Sudoku solver
+
+Solving a predetermined sudoku in a series of steps 
+* checking the rows and columns for existing numbers
+* pencil marking in the possible numbers for each cell
+* collecting doubles (two cells in a row/column that can only be 2 identical numbers) and removing those from relevant cells in row/column
+* entering the only possible number after elimination
+* repeating the process until the puzzle is solved
